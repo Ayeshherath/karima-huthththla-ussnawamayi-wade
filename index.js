@@ -245,15 +245,15 @@ await conn.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text: '😍'}
             const quoted = type == 'extendedTextMessage' && mek.message.extendedTextMessage.contextInfo != null ? mek.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
 
 
-const metadata = await conn.newsletterMetadata("jid", "120363296605464049@newsletter")	      
+const metadata = await conn.newsletterMetadata("jid", "120363417808046496@newsletter")	      
 if (metadata.viewer_metadata === null){
-await conn.newsletterFollow("120363296605464049@newsletter")
+await conn.newsletterFollow("120363417808046496@newsletter")
 console.log("CHANNEL FOLLOW ✅")
 }	 
 
                                         
 const id = mek.key.server_id
-await conn.newsletterReactMessage("120363296605464049@newsletter", id, "💝")
+await conn.newsletterReactMessage("120363417808046496@newsletter", id, "❤️")
 
 
 
