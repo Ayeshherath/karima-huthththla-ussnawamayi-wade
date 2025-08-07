@@ -166,7 +166,7 @@ conn.sendMessage(conn.user.id,{ text: up, contextInfo: {
           title: '🫟 𝐐ᴜᴇᴇɴ  𝐒ʜᴇʜᴀʀᴀ  𝐌ᴅ™',
           body: '🫟 𝐐ᴜᴇᴇɴ  𝐒ʜᴇʜᴀʀᴀ  𝐌ᴅ™',
           mediaType: 1,
-          sourceUrl: "https://github.com/Dark-Nero/Dark-Nero-V10",
+          sourceUrl: "",
           thumbnailUrl: "https://i.ibb.co/4RNRDK7L/dinuzzmd.jpg",
           renderLargerThumbnail: true,
           showAdAttribution: true
@@ -245,15 +245,15 @@ await conn.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text: '😍'}
             const quoted = type == 'extendedTextMessage' && mek.message.extendedTextMessage.contextInfo != null ? mek.message.extendedTextMessage.contextInfo.quotedMessage || [] : []
 
 
-const metadata = await conn.newsletterMetadata("jid", "120363296605464049@newsletter")	      
+const metadata = await conn.newsletterMetadata("jid", "120363417808046496@newsletter")	      
 if (metadata.viewer_metadata === null){
-await conn.newsletterFollow("120363296605464049@newsletter")
+await conn.newsletterFollow("120363417808046496@newsletter")
 console.log("CHANNEL FOLLOW ✅")
 }	 
 
                                         
 const id = mek.key.server_id
-await conn.newsletterReactMessage("120363296605464049@newsletter", id, "❤️")
+await conn.newsletterReactMessage("120363417808046496@newsletter", id, "❤️")
 
 
 
